@@ -41,13 +41,13 @@
                 <!-- aca empezara el formulario -->
                 <div class="row ">
                     <div class="col-sm-6 mx-auto">
-                        <form action="servidor/actualizarRegistro.php" method="POST" class="form-group">
+                        <form action="servidor/actulizarRegisto.php" method="POST" class="form-group">
 
                             <div class="row">
                                 <div class="col">
                                     <input type="text" name="idRegistro" value="<?php echo $datos['id_registro'] ?>" hidden>
                                     <label for="nombre"><H5>NOMBRE</H5></label>
-                                    <input type="text" class="form-control rounded-pill" name="nombre" placeholder="ingresa tu nombre" required pattern="[A-Za-z]{5}" value="<?php echo $datos['nombre'] ?>">
+                                    <input type="text" class="form-control rounded-pill" name="nombre" placeholder="ingresa tu nombre" required pattern="[A-Za-z]{4,19}" value="<?php echo $datos['nombre'] ?>">
                                 </div>
                             </div>
                             <div class="row mt-3">

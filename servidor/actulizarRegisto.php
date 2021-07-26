@@ -2,7 +2,7 @@
     $idRegistro = $_POST['idRegistro'];
     $nombre = $_POST['nombre'];
     $apellidoP = $_POST['apellidoP'];
-    $apellidoM = $_POST['apeliidoM'];
+    $apellidoM = $_POST['apellidoM'];
     $fecha = $_POST['fecha'];
     $sexo = $_POST['sexo'];
 
@@ -15,11 +15,11 @@
                                 apeliidoM= '$apellidoM',
                                 fecha= '$fecha',
                                 sexo= '$sexo'
-            WHERE idRegistro = '$idRegistro' ";
+            WHERE id_registro = '$idRegistro' ";
     $resultado = mysqli_query($conexion,$sql);
 
     if ($resultado) {
-        header("location:../listado.php");
+        header("location:../index.php");
     } else {
         echo "No se pudo actualizar :(";
     }
